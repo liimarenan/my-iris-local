@@ -1,0 +1,17 @@
+ROUTINE WebTerminal.Installer.G1 [Generated]
+	;WebTerminal.Installer.G1
+	;(C)InterSystems, method generator for class WebTerminal.Installer.  Do NOT edit.
+	Quit
+	;
+#include %systemInclude
+#include %systemInclude
+#classcontext WebTerminal.Installer
+#generator
+#classmethod iscProductVersion
+piscProductVersion(%class,%parameter) public { New %classname Set %classname=%class
+ Quit $case(
+        ##class(%Dictionary.CompiledMethod).IDKEYExists("%SYSTEM.Version", "GetISCProduct"),
+        1: $CLASSMETHOD("%SYSTEM.Version", "GetISCProduct"),
+        : 2
+    )
+}
