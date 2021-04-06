@@ -1,5 +1,5 @@
 /// Description
-Class PackageName.ClassName Extends %RegisteredObject
+Class mac.util.Teste Extends %RegisteredObject
 {
 
 /// Description
